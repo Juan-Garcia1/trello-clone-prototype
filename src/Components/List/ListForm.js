@@ -1,15 +1,23 @@
-import React from "react"
+import React from "react";
 
-const ListForm = ({ listName, handleListNameChange, handleSubmitListName }) => (
+const ListForm = ({
+  id,
+  listName,
+  editName,
+  editListName,
+  // handleListNameChange,
+  handleSubmitListName
+}) => (
   <form onSubmit={handleSubmitListName}>
     <input
       type="text"
-      placeholder="Add a list..."
+      placeholder="Enter list title..."
       value={listName}
-      onChange={handleListNameChange}
+      onChange={e => editName(id, e.target.value)}
+      // onChange={handleListNameChange}
     />
-    <button type="submit">Save</button>
+    {editListName === false && <button type="submit">Add List</button>}
   </form>
-)
+);
 
-export default ListForm
+export default ListForm;
