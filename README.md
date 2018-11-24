@@ -8,8 +8,6 @@ npm install
 
 Then in the project directory, you can run:
 
-###
-
 ```
 npm start
 ```
