@@ -2,18 +2,52 @@
   padding: 20px;
 }
 
-.list {
-  width: 250px;
-  border: solid 1px lightgray;
-  padding: 5px 10px;
-  border-radius: 5px;
+.board {
+  display: flex;
+  align-items: flex-start;
 }
 
+.list {
+  width: 250px;
+  margin: 10px;
+  /* border: solid 1px lightgray; */
+  /* padding: 20px 10px; */
+  border-radius: 5px;
+  position: relative;
+  background: #dfe3e6;
+}
+.list--name {
+  padding: 10px;
+}
+.list--delete {
+  position: absolute;
+  background: none;
+  border: none;
+  cursor: pointer;
+  top: 0;
+  right: 0;
+}
+
+.card--add {
+  padding: 10px;
+  margin: 0;
+}
+.card--add:hover {
+  background: #c3ccd1;
+  /* text-decoration: underline; */
+}
+.card--add:hover > span {
+  text-decoration: underline;
+}
+form {
+  padding: 10px;
+}
 form input,
 form textarea {
   width: 100%;
-  border: solid 2px lightgray;
-  padding: 5px;
+  border: none;
+  /* border: solid 2px lightgray; */
+  padding: 8px 5px;
   margin-bottom: 5px;
   border-radius: 4px;
 }
@@ -24,4 +58,12 @@ form button[type="submit"] {
   padding: 5px 10px;
   background: green;
   border-radius: 4px;
+}
+
+form .cancel-btn {
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  background: none;
+  margin-left: 8px;
 }
