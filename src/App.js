@@ -1,16 +1,17 @@
-import React, { Component } from "react"
-import "./App.css"
+import React, { Component } from "react";
+import "./App.css";
 
-import List from "./Components/List/List"
+// import List from "./Components/List/List"
+import Board from "./Components/Board/Board";
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <List />
+        <Board />
       </div>
-    )
+    );
   }
 }
 
-export default App
+export default App;
